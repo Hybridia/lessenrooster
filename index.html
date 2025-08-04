@@ -93,51 +93,126 @@
             font-size: 14px;
         }
         
-        .app-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #3498db, #2980b9);
+        .features-section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 16px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 25px;
             border-radius: 12px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            margin-right: 15px;
-            vertical-align: middle;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         
-        .header-section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         }
         
-        .app-info {
-            display: inline-block;
-            vertical-align: middle;
-        }
-        
-        .app-name {
-            font-size: 28px;
-            font-weight: bold;
+        .feature-card h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
             color: #2c3e50;
-            margin: 0;
+            font-size: 18px;
+            border-left: none;
+            padding-left: 0;
         }
         
-        .app-tagline {
-            color: #7f8c8d;
-            margin: 5px 0 0 0;
-            font-size: 16px;
+        .feature-card ul {
+            margin-bottom: 0;
+        }
+        
+        .feature-card li {
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-section">
-            <div class="app-info">
-                <h1 class="app-name">Lessenrooster</h1>
-                <p class="app-tagline">Your Personal School Timetable</p>
+            <div class="container">
+        <h1>Lessenrooster - Your Personal School Timetable</h1>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <h2>🚀 What You Can Do With Lessenrooster</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📅 Smart Scheduling</h3>
+                    <ul>
+                        <li><strong>Weekly recurring lessons</strong> - Set up your regular class schedule</li>
+                        <li><strong>One-time lessons</strong> - Add special events or schedule changes</li>
+                        <li><strong>Weekend support</strong> - Include Saturday and Sunday classes</li>
+                        <li><strong>Flexible timing</strong> - Custom start and end times for each lesson</li>
+                        <li><strong>Teacher & location info</strong> - Store classroom numbers, buildings, and instructor names</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🎨 Beautiful Design</h3>
+                    <ul>
+                        <li><strong>Color themes</strong> - Choose from Standard, Pastel, Soft, Vibrant, or Monochrome</li>
+                        <li><strong>Custom colors</strong> - Create your own personalized color scheme</li>
+                        <li><strong>Dark & light modes</strong> - Comfortable viewing any time of day</li>
+                        <li><strong>Subject color coding</strong> - Assign unique colors to each subject</li>
+                        <li><strong>Clean interface</strong> - Modern, intuitive design that's easy to navigate</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔔 Smart Notifications</h3>
+                    <ul>
+                        <li><strong>Customizable alerts</strong> - Get notified 5-30 minutes before lessons</li>
+                        <li><strong>Subject-specific timing</strong> - Different notification times for different subjects</li>
+                        <li><strong>Real-time updates</strong> - See which lessons are starting soon or in progress</li>
+                        <li><strong>Smart reminders</strong> - Never miss an important class again</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🤝 Easy Sharing</h3>
+                    <ul>
+                        <li><strong>QR code generation</strong> - Share your complete timetable instantly</li>
+                        <li><strong>Quick import</strong> - Scan QR codes to import schedules from friends</li>
+                        <li><strong>Study group coordination</strong> - Perfect for group projects and study sessions</li>
+                        <li><strong>Secure sharing</strong> - Direct device-to-device transfer, no cloud storage</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📱 Complete Control</h3>
+                    <ul>
+                        <li><strong>100% offline</strong> - Works without internet connection</li>
+                        <li><strong>Local storage</strong> - All data stays on your device</li>
+                        <li><strong>No tracking</strong> - Zero data collection or analytics</li>
+                        <li><strong>Ad-free experience</strong> - Clean, distraction-free interface</li>
+                        <li><strong>Multi-language</strong> - Available in English and Dutch</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⚙️ Advanced Features</h3>
+                    <ul>
+                        <li><strong>Expandable day view</strong> - Tap days to see detailed lesson information</li>
+                        <li><strong>Week overview</strong> - Calendar view showing all your lessons</li>
+                        <li><strong>Lesson notes</strong> - Add personal notes and reminders to any lesson</li>
+                        <li><strong>Data management</strong> - Easy backup and restore functionality</li>
+                        <li><strong>Customizable settings</strong> - Tailor the app to your preferences</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -232,7 +307,9 @@
         <h2>10. Contact Information</h2>
         <div class="contact-info">
             <p>If you have questions about this privacy policy or Lessenrooster, you can contact us at:</p>
-            <p><strong>Developer:</strong>tha_ultima@hotmail.com<br>
+            <p><strong>Developer:</strong> Ram Steenhaut<br>
+            <strong>Support:</strong> tha_ultima@hotmail.com<br>
+            <strong>Release Date:</strong> August 2025</p>
         </div>
 
         <h2>11. Legal Compliance</h2>
@@ -246,7 +323,7 @@
 
         <div class="footer">
             <p>© 2025 Ram Steenhaut. Lessenrooster is developed independently with privacy and user experience as top priorities.</p>
-            <p>This privacy policy was last updated on January 2025.</p>
+            <p>This privacy policy was last updated on August 2025.</p>
         </div>
     </div>
 </body>
